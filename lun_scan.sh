@@ -1,11 +1,11 @@
 #!/bin/bash
-# =============================================================================
-# lun_scan.sh — TYLKO ODCZYT
+# lun_scan.sh
+# skrypt odczytuje WWN z listy i sprawdza czy są puste (czy mają filesystem) oraz czy nie są datastorami VMware
+# skrypt read only - tylko odczytuje stan faktyczny
 # Wejście:  plik txt z WWN (jeden na linię)
 # Wyjście:  ekran — WWN -> /dev/mapper/..., rozmiar, typ FS
 #
 # Użycie: ./lun_scan.sh <plik_wwn.txt>
-# =============================================================================
 
 set -uo pipefail
 

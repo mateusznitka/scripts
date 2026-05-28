@@ -1,5 +1,5 @@
 #!/bin/bash
-# removelun.sh - Usuwa pojedynczy LUN z systemu przed odprezentowaniem z macierzy.
+# lun_remove.sh - Usuwa pojedynczy LUN z systemu przed odprezentowaniem z macierzy.
 # Workflow uzycia jest taki: 
 # 1. sprawdzasz czy OS widzi LUNa i czy jest używany, w razie potrzeby odmontowujesz
 # 2. odpalasz skrypt dla danego WWN/UID, sprawdzasz czy prawdiłowo znalazł scieżki

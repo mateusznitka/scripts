@@ -1,14 +1,13 @@
 #!/bin/bash
-# =============================================================================
-# lun_format.sh — TWORZY FILESYSTEMY XFS
+# lun_format.sh
+# Skrypt do tworzenia filesystemów XFS na LUNach z listy
+# Sprawdza najpierw, czy LUNy są puste, jeśli tak, tworzy filesystem, jeśli nie - kończy działanie
 # Wejście:  ten sam plik txt z WWN co lun_scan.sh (txt z lista LUN-ow)
-# Wyjście:  na ekran: wwn -> UUID  (do skopiowania do Excela)
+# Wyjście:  na ekran: wwn -> UUID (aby móc skopiować przypisania WWN do UUID filesystemów np. do dokumentacji)
 #
 # Użycie: ./lun_format.sh <plik_wwn.txt>
 #
 # UWAGA: Ten skrypt modyfikuje urządzenia blokowe (mkfs.xfs).
-#
-# =============================================================================
 
 set -uo pipefail
 
